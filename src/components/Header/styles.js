@@ -13,4 +13,19 @@ header {
     justify-content: space-between;
 }
 
+ button {
+    width: 160px;
+    height: 40px;
+    padding: 0% 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    background-color: #00aa00;
+    border-radius: 4px;
+    border: 0;
+    color: #fff;
+ }
+ 
+ 
  `

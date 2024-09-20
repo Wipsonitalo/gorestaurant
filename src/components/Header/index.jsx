@@ -1,23 +1,20 @@
 import { Container } from "./styles"
+import { FaPlus} from "react-icons/fa";
 
 export const Header = ({ openModal }) => {
     return(
         <Container>
             <header>
                 <nav>
-                    <div>
                         <button
                         type="button"
                         onClick={() => {
                         openModal();
                         }}
                         >
-                         <div className="text">Novo Prato</div>
-                         <div className="icon">
-                         Icon
-                         </div>
+                         <FaPlus />
+                        <p>Novo Prato</p>
                         </button>
-                    </div>
                 </nav>
             </header>
         </Container>

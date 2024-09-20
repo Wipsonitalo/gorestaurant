@@ -1,8 +1,23 @@
 import { Container } from "./style"
+import { useState } from "react";
+
+import { FiEdit3, FiTrash } from "react-icons/fi";
+
 
  export const Food = ({ food }) => {
+
+ const [isAvailable, setIsAvailable] = useState(food.available);
+
+  async function toggleAvailable() {
+    setIsAvailable(!isAvailable);
+  }
+
+  function setEditingFood() {
+    handleEditFood(food);
+  }
+
     return(
-        <Container>
+        <Container available={isAvailable}>
             <header>
                 <img src={food.image} alt={food.name} />
             </header>
@@ -23,6 +38,7 @@ import { Container } from "./style"
                onClick={() => setEditingFood()}
                data-testid={'edit-food-${food.id'}
                >
+                <FiEdit3 size={20} />
                </button> 
 
                <button
@@ -31,17 +47,19 @@ import { Container } from "./style"
                onClick={() => handleDelete(food.id)}
                data-testid={'remove-food-${food.id}'}
                >
+               <FiTrash size={20} />
                </button>
             </div>
 
             <div className="availability-container">
-
-            <label htmlFor={'available-switch-${food.id}'} className="switch">
+            <p>{isAvailable ? 'Disponível' : 'Indisponível'}</p>
+            <label htmlFor={`available-switch-${food.id}`} className="switch">
                 <input 
-                id={'available-switch-${food.id}'}
+                id={`available-switch-${food.id}`}
                 type="checkbox"
-
-                data-testid={'change-status-food-${food.id}'}
+                data-testid={`change-status-food-${food.id}`}
+                checked={isAvailable}
+                onChange={toggleAvailable}
                 />
 
             <span className="slider" />

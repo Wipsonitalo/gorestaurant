@@ -1,28 +1,49 @@
 {
-    "foods": [
-      {
-        "id": 1,
-        "name": "Ao molho",
-        "description": "Macarrão ao molho branco, fughi e cheiro verde das montanhas.",
-        "price": "19.90",
-        "available": true,
-        "image": "https://storage.googleapis.com/golden-wind/bootcamp-gostack/desafio-food/food1.png"
-      },
-      {
-        "id": 2,
-        "name": "Veggie",
-        "description": "Macarrão com pimentão, ervilha e ervas finas colhidas no himalaia.",
-        "price": "21.90",
-        "available": true,
-        "image": "https://storage.googleapis.com/golden-wind/bootcamp-gostack/desafio-food/food2.png"
-      },
-      {
-        "id": 3,
-        "name": "A la Camarón",
-        "description": "Macarrão com vegetais de primeira linha e camarão dos 7 mares.",
-        "price": "25.90",
-        "available": true,
-        "image": "https://storage.googleapis.com/golden-wind/bootcamp-gostack/desafio-food/food3.png"
-      }
-    ]
-  }
+  "foods": [
+    {
+      "id": "1",
+      "name": "Ao molho",
+      "description": "Macarrão ao molho branco, fughi e cheiro verde das montanhas.",
+      "price": "19.90",
+      "available": true,
+      "image": "https://storage.googleapis.com/golden-wind/bootcamp-gostack/desafio-food/food1.png"
+    },
+    {
+      "id": "2",
+      "name": "Veggie",
+      "description": "Macarrão com pimentão, ervilha e ervas finas colhidas no himalaia.",
+      "price": "21.90",
+      "available": true,
+      "image": "https://storage.googleapis.com/golden-wind/bootcamp-gostack/desafio-food/food2.png"
+    },
+    {
+      "id": "3",
+      "name": "A la Camarón",
+      "description": "Macarrão com vegetais de primeira linha e camarão dos 7 mares.",
+      "price": "25.90",
+      "available": true,
+      "image": "https://storage.googleapis.com/golden-wind/bootcamp-gostack/desafio-food/food3.png"
+    },
+    {
+      "id": "c04a",
+      "image": "https://i.pinimg.com/736x/3e/cb/b2/3ecbb22f1f1dc96a82546d094f667fc7.jpg",
+      "name": "batata com carne",
+      "price": "100,00",
+      "description": "caique vai pagar"
+    },
+    {
+      "id": "47c8",
+      "image": "https://www.designi.com.br/images/preview/10083364.jpg",
+      "name": "frango",
+      "price": "50.00",
+      "description": "gratis"
+    },
+    {
+      "id": "0c80",
+      "image": "https://i.pinimg.com/736x/3e/cb/b2/3ecbb22f1f1dc96a82546d094f667fc7.jpg",
+      "name": "frango",
+      "price": "50.00",
+      "description": "caique vai pagar"
+    }
+  ]
+}
